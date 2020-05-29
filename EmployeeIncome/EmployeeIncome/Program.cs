@@ -14,24 +14,30 @@ namespace EmployeeIncome
             Console.ReadLine();
 
             Console.WriteLine("Person 1");
-            int p1Rate = 43;
+            Console.WriteLine("How much do you make per hour?");
+            int p1Rate = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Hourly Rate: " + p1Rate);
-            int p1WeekHours = 45;
+            Console.WriteLine("How many hours do you work per week?");
+            int p1WeekHours = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Hours worked per week: " + p1WeekHours);
             Console.ReadLine();
 
             Console.WriteLine("Person 2");
-            int p2Rate = 22;
+            Console.WriteLine("How much do you make per hour?");
+            int p2Rate = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Hourly Rate: " + p2Rate);
-            int p2WeekHours = 60;
+            Console.WriteLine("How many hours do you work per week?");
+            int p2WeekHours = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Hours worked per week: " + p2WeekHours);
             Console.ReadLine();
 
-            int p1Annual = 92880;
+            Console.WriteLine("What is your annual income?");
+            int p1Annual = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Annual salary of Person 1: " + p1Annual);
             Console.ReadLine();
 
-            int p2Annual = 63360;
+            Console.WriteLine("What is your annual income?");
+            int p2Annual = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Annual salary of Person 2: " + p2Annual);
             Console.ReadLine();
 
