@@ -32,12 +32,12 @@ namespace EmployeeIncome
             Console.ReadLine();
 
             Console.WriteLine("What is your annual income?");
-            int p1Annual = Convert.ToInt32(Console.ReadLine());
+            int p1Annual = p1Rate * p1WeekHours * 52;
             Console.WriteLine("Annual salary of Person 1: " + p1Annual);
             Console.ReadLine();
 
             Console.WriteLine("What is your annual income?");
-            int p2Annual = Convert.ToInt32(Console.ReadLine());
+            int p2Annual = p2Rate * p2WeekHours * 52;
             Console.WriteLine("Annual salary of Person 2: " + p2Annual);
             Console.ReadLine();
 
