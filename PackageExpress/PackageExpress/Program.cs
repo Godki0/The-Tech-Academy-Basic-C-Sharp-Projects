@@ -18,6 +18,8 @@ namespace PackageExpress
             if (packWeight >= 50)
             {
                 Console.WriteLine("Package too heavy to be shipped via Package Express");
+                Console.ReadLine();
+                Environment.Exit(0);
             }
             else if (packWeight < 50)
             {
