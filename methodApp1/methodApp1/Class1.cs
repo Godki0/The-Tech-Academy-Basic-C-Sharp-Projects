@@ -7,30 +7,29 @@ using System.Threading.Tasks;
 
 namespace methodApp1
 {
-    public class Class1
+    class Class1
     {
-        public static void Addition()
+        public int Addition(int userInput)
         {
-            int userInput = Convert.ToInt32(Console.ReadLine());
-            int result = 5 + userInput;
-            Console.WriteLine("Your answer is : " + result);
-            Console.ReadLine();
+          
+            int result = 100 + userInput;
+            return result;
+            
         }
 
-        public static void Multiply()
+        public int Multiply(int userInput)
         {
-            int userInput = Convert.ToInt32(Console.ReadLine());
-            int result = 5 * userInput;
-            Console.WriteLine("Your answer is : " + result);
-            Console.ReadLine();
+            
+            int result = 100 * userInput;
+            return result;
         }
 
-        public static void Divide()
+        public int Divide(int userInput)
         {
-            int userInput = Convert.ToInt32(Console.ReadLine());
-            int result = 5 / userInput;
-            Console.WriteLine("Your answer is : " + result);
-            Console.ReadLine();
+            
+            int result = 100 / userInput;
+            return result;
+            
         }
     }
 }

@@ -12,12 +12,22 @@ namespace methodApp1
     {
         static void Main(string[] args)
         {
+            Class1 Math1 = new Class1();
             Console.WriteLine("Please enter a number.");
-            Class1.Addition();
+            int user = Convert.ToInt32(Console.ReadLine());
+            int add = Math1.Addition(user);
+            Console.WriteLine("Addition method demonstration: "+ add);
+
             Console.WriteLine("Please enter a number.");
-            Class1.Multiply();
+            int user1 = Convert.ToInt32(Console.ReadLine());
+            int multiply = Math1.Multiply(user1);
+            Console.WriteLine("Multiplication method demonstration: " + multiply);
+
             Console.WriteLine("Please enter a number.");
-            Class1.Divide();
+            int user2 = Convert.ToInt32(Console.ReadLine());
+            int divide = Math1.Divide(user2);
+            Console.WriteLine("Division method demonstration: " + divide);
+            Console.ReadLine();
 
         }   
     }
