@@ -26,7 +26,7 @@ namespace ConsolePT1
             Console.WriteLine("Infinite loop");
 
             int[] intArray = { 500 };
-            for (int i = 0; i < intArray.Length; i++) // To make it loop change the i++ to i--
+            for (int i = 0; i < intArray.Length; i++) // To make it loop forever change the i++ to i--
             {
                 Console.WriteLine(intArray[i]);
             }
@@ -53,55 +53,67 @@ namespace ConsolePT1
             int[] intArray3 = { 70, 75, 80, 40, 30, 10 };
             for (int j = 0; j < intArray2.Length; j++)
             {
-                if (intArray2[j] <= 70)
+                if (intArray3[j] <= 70)
                 {
-                    Console.WriteLine("it is starting to look like winter look at the tempatures outside: " + intArray2[j]);
+                    Console.WriteLine("it is starting to look like winter look at the tempatures outside: " + intArray3[j]);
                 }
             }
             Console.ReadLine();
 
             Console.WriteLine("Enter one of these names and see what happens: John, Marry, Joe, Bart");
-            string inputUser = Console.ReadLine().ToUpper();
-            List<string> names = new List<string>() { "JOHN", "MARRY", "JOE", "BART" };
-            
-            foreach (string name in names)
-            {
-                if (name == inputUser)
-                {
-                    Console.WriteLine("Hey stop yelling at: " + inputUser);
-                    Console.ReadLine();
-                    //Environment.Exit(0); code to exit at this point
-                }
-                //else if (name != inputUser)
-                //{
-                    //Console.WriteLine("That was the wrong answer!");
-                    //Console.ReadLine();
-                    //Environment.Exit(0);
-                //}
-            }
+            string inputUser = Console.ReadLine();
+            List<string> names = new List<string>() { "John", "Marry", "Joe", "Bart" };
             
 
+           
+            if (!names.Contains(inputUser))
+            {
+                Console.WriteLine("Input was not in the list.");
+            }
+            else
+            {
+                for (int i = 0; i < names.Count; i++)
+                {
+                    if (names[i] == inputUser)
+                    {
+                        Console.WriteLine(i);
+                        Console.ReadLine();
+                        break;
+                    }
+                }
+            }
 
 
             Console.WriteLine("Enter one of these names and see what happens: John, Marry, Joe, Bart");
             string inputUser2 = Console.ReadLine();
-            List<string> names2 = new List<string>() { "JOHN", "MARRY", "JOE", "BART", "JOHN" };
-            List<string> names21 = new List<string>();
+            List<string> names2 = new List<string>() { "John", "Marry", "Joe", "Bart", "John" };
+            
 
-            foreach (string name2 in names2)
+            if (!names2.Contains(inputUser2))
             {
-                if (name2 == inputUser2)
+                Console.WriteLine("Input was not in the list.");
+            }
+            else
+            {
+                for (int i = 0; i < names2.Count; i++)
                 {
-                    names21.Add(name2);
-                }
-                else if (name2 != inputUser2)
-                {
-                    Console.WriteLine("That is not in the list");
-                    Console.ReadLine();
+                    if (names2[i] == inputUser2)
+                    {
+                        Console.WriteLine(i);
+                        Console.ReadLine();
+                        
+                    }
                 }
             }
-            Console.WriteLine(names21.Count);
-            Console.ReadLine();
+
+            List<string> names3 = new List<string>() { "John", "Marry", "Joe", "Bart", "John" };
+
+            foreach (string name3 in names3)
+            {
+                Console.WriteLine(name3);
+                Console.ReadLine();
+            }    
+
         }
     }
 }
