@@ -10,7 +10,12 @@ namespace inheritApp174
     {
         static void Main(string[] args)
         {
+            Person person = new Person();
             Employee employee = new Employee();
-                    }
+            employee.FirstName = " Sample ";
+            employee.LastName = " Student ";
+            employee.SayName();
+            Console.ReadLine();
+        }
     }
 }

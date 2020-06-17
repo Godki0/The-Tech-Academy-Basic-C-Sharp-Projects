@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace inheritApp174
 {
-    class Person
+    public class Person
     {
-        string FirstName;
-        string LastName;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public void SayName()
         {
-            Console.WriteLine("Name:"+ FirstName + LastName);
+            Console.WriteLine("Name:" + FirstName + LastName);
         }
     }
 }
