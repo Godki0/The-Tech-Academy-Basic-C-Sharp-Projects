@@ -11,9 +11,16 @@ namespace methodApp166
         static void Main(string[] args)
         {
             methodMath math = new methodMath();
-            int v1 = math.addMath(5,5);
-            Console.WriteLine(v1);
+            int y;
+            Console.WriteLine(y);
             Console.ReadLine();
+        }
+        public class methodMath
+        {
+            public void addMath(int x, out int y)
+            {
+                y = 6;
+            }
         }
     }
 }
