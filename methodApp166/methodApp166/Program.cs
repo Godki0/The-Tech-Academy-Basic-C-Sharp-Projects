@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,16 +11,19 @@ namespace methodApp166
     {
         static void Main(string[] args)
         {
-            methodMath math = new methodMath();
-            int y;
-            Console.WriteLine(y);
+            methodMath doMath = new methodMath();
+            int y = 10;
+            int z;
+            doMath.addMath(5, out y);
+            Console.WriteLine("Y is just printed: {0} ", y);
             Console.ReadLine();
         }
         public class methodMath
         {
             public void addMath(int x, out int y)
             {
-                y = 6;
+                int z = x * 10;
+                y = 10;
             }
         }
     }
