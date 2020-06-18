@@ -106,12 +106,23 @@ namespace ConsolePT1
                 }
             }
 
-            List<string> names3 = new List<string>() { "John", "Marry", "Joe", "Bart", "John" };
+            Console.WriteLine("Enter one of these names and see what happens: Bob, Marry, Joe, Bart");
+            List<string> names3 = new List<string>() { "Bob", "Marry", "Joe", "Bart", "Bob" };
+            List<string> names4 = new List<string>();
 
             foreach (string name3 in names3)
             {
-                Console.WriteLine(name3);
-                Console.ReadLine();
+                names4.Add(name3);
+                if (names3 == names4)
+                {
+                    Console.WriteLine("That name is in he list.");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine(name3);
+                    Console.ReadLine();
+                }
             }    
 
         }
