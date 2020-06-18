@@ -12,9 +12,7 @@ namespace methodApp166
         static void Main(string[] args)
         {
             methodMath doMath = new methodMath();
-            int y = 10;
-            int z;
-            doMath.addMath(5, out y);
+            doMath.addMath(10, out int y);
             Console.WriteLine("Y is just printed: {0} ", y);
             Console.ReadLine();
         }
@@ -22,8 +20,8 @@ namespace methodApp166
         {
             public void addMath(int x, out int y)
             {
-                int z = x * 10;
-                y = 10;
+                y = x * 10;
+                
             }
         }
     }
