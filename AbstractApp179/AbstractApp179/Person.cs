@@ -12,7 +12,5 @@ namespace AbstractApp179
         public string lastName { get; set; }
 
         public abstract void SayName();
-
-        
     }
 }
