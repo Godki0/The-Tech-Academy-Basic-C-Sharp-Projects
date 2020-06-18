@@ -112,15 +112,15 @@ namespace ConsolePT1
 
             foreach (string name3 in names3)
             {
-                names4.Add(name3);
-                if (names3 == names4)
+                if (!names4.Contains(name3))
                 {
-                    Console.WriteLine("That name is in he list.");
+                    Console.WriteLine(name3);
+                    names4.Add(name3);
                     Console.ReadLine();
                 }
                 else
                 {
-                    Console.WriteLine(name3);
+                    Console.WriteLine("That name was mentioned already");
                     Console.ReadLine();
                 }
             }    
