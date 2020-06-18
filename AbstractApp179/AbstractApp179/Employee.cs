@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace AbstractApp179
 {
-    class Employee : Person
+    class Employee : Person, Iquittable
     {
         public override void SayName()
         {
             Console.WriteLine("Name: " + firstName + lastName);
+        }
+        public void Quit()
+        {
+            Console.WriteLine("I quit");
         }
     }
 }

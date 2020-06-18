@@ -14,6 +14,7 @@ namespace AbstractApp179
             employee.firstName = "Sample ";
             employee.lastName = "Student ";
             employee.SayName();
+            employee.Quit();
             Console.ReadLine();
         }
     }
