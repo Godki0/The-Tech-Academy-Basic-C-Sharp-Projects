@@ -17,8 +17,13 @@ namespace methodApp219
             {
                 file.WriteLine(userInput);
             }
-            Console.WriteLine("Here is your number:" + userInput);
-            Console.ReadLine();
+            using (StreamReader txt = new StreamReader(@"C:\Users\burro\Logs\log1.txt"))
+            {
+                string num = txt.ReadToEnd();
+                Console.WriteLine(num);
+                Console.ReadLine();
+            }
+            
         }
     }
 }
