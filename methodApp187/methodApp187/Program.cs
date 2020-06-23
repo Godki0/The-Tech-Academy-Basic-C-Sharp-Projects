@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace methodApp187
 {
-    class Program
+     class Program
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.FirstName = "John";
-            employee.LastName = "Berry";
-            employee.Id = 1;
-            employee.SayName();
+            Employee John = new Employee();
+            Employee Jerry = new Employee();
+            John.FirstName = "John ";
+            John.LastName = "Berry ";
+            John.Id = 1;
+            Jerry.FirstName = "Jerry ";
+            Jerry.LastName = "Bright ";
+            Jerry.Id = 2;
+            John.SayName();
+            Jerry.SayName();
             Console.ReadLine();
         }
     }
