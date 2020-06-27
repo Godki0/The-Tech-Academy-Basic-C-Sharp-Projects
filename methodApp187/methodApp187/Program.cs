@@ -20,6 +20,10 @@ namespace methodApp187
             Jerry.Id = 2;
             John.SayName();
             Jerry.SayName();
+            Console.WriteLine(John);
+            Console.WriteLine(John.Id);
+            Console.WriteLine(John == Jerry);
+            Console.WriteLine();
             Console.ReadLine();
         }
     }

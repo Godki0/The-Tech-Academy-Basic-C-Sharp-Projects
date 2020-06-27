@@ -10,7 +10,6 @@ namespace methodApp203
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
             Employee Joe = new Employee
             {
                 firstName = "Joe",
@@ -71,23 +70,39 @@ namespace methodApp203
                 lastName = "Matt",
                 Id = 10
             };
-            List<string> workers = new List<string>();
-            foreach (string name in employee.employees)
+            List<Employee> employees = new List<Employee>();
+            employees.Add(Joe);
+            employees.Add(Berry);
+            employees.Add(Marry);
+            employees.Add(Doug);
+            employees.Add(Mark);
+            employees.Add(Joe1);
+            employees.Add(Bart);
+            employees.Add(Gary);
+            employees.Add(Meg);
+            employees.Add(Arthur);
+            List<Employee> workers = new List<Employee>();
+            foreach (Employee employee in employees)
             {
-                if (name == "Joe Dart")
+                if (employee.firstName == "Joe")
                 {
-                    workers.Add(name);
-                    Console.WriteLine(name);
+                    workers.Add(employee);
+                    Console.WriteLine(employee.firstName);
                 }
             }
 
-            List<string> work = employee.employees.Where(x => x.StartsWith("Joe")).ToList();
-            foreach (string name in work)
+            List<Employee> work = employees.Where(x => x.firstName.StartsWith("Joe")).ToList();
+            foreach (Employee employee1 in work)
             {
-                Console.WriteLine(name);
+                Console.WriteLine(employee1.firstName);
             }
 
-            //List<int> Id = employee.employees.FindIndex(x => x >= 5).ToList();
+            List<Employee> Id = employees.Where(x => x.Id >= 5).ToList();
+            foreach (Employee employee2 in Id)
+            {
+                Console.WriteLine(employee2.Id);
+            }
+
             Console.WriteLine();
             Console.ReadLine();
         }

@@ -8,9 +8,9 @@ namespace methodApp187
 {
     public class Employee : Person
     {
-        public static Employee operator ==(Employee employee)
+        public static bool operator ==(Employee employee, Employee employee1)
         {
-            if (employee.Id == employee.Id)
+            if (employee.Id == employee1.Id)
             {
                 return true;
             }
@@ -21,9 +21,9 @@ namespace methodApp187
 
         }
 
-        public static Employee operator !=(Employee employee)
+        public static bool operator !=(Employee employee, Employee employee1)
         {
-            if (employee.Id != employee.Id)
+            if (employee.Id != employee1.Id)
             {
                 return true;
             }
